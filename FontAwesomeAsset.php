@@ -25,7 +25,7 @@ class FontAwesomeAsset extends \yii\web\AssetBundle
      * @inherit
      */
     public $css = [
-        'css/font-awesome.min.css',
+        'web-fonts-with-css/css/fontawesome-all.css',
     ];
 
     /**
@@ -36,9 +36,5 @@ class FontAwesomeAsset extends \yii\web\AssetBundle
     public function init()
     {
         parent::init();
-
-        $this->publishOptions['beforeCopy'] = function ($from, $to) {
-            return preg_match('%(/|\\\\)(fonts|css)%', $from);
-        };
     }
 }
