@@ -25,7 +25,7 @@ class FontAwesomeAsset extends \yii\web\AssetBundle
      * @inherit
      */
     public $css = [
-        'web-fonts-with-css/css/fontawesome-all.css',
+        'css/all.css',
     ];
 
     /**
